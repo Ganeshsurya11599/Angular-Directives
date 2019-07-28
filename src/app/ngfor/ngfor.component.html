@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row m-2">
+        <div class="col-lg-3 col-md-12 col-sm-12 text-center bg-primary text-white">
+                <img src="/assets/b.jpg" width="50%" height="100px">
+               <p *ngFor="let name of user.bio">{{name}}</p>
+           </div>
+        <div class="col-lg-3 col-md-12 col-sm-12 text-center bg-success text-white">
+                     <img src="/assets/b1.jpg" width="50%" height="100px">
+                    <p *ngFor="let name of user.bio1">{{name}}</p>
+                </div> 
+                <div class="col-lg-3 col-md-12 col-sm-12 text-center bg-info text-white">
+                        <img src="/assets/b2.jpg" width="50%" height="100px">
+                       <p *ngFor="let name of user.bio2">{{name}}</p>
+                   </div> 
+                   <div class="col-lg-3 col-md-12 col-sm-12 text-center bg-danger text-white">
+                        <img src="/assets/b3.png" width="50%" height="100px">
+                       <p *ngFor="let name of user.bio3">{{name}}</p>
+                   </div>    
+        </div>
+    </div>

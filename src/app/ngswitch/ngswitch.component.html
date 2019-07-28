@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+            <select  #select (change)="choice($event.target.value)" ngModel>
+                <option>Select</option>
+                <option value="1">First</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+                <option value="99">Other</option>
+              </select>
+  
+              <div [ngSwitch]="page" class="text-white para">
+                <div *ngSwitchCase="1">A.Ganeshsurya</div>
+                <div *ngSwitchCase="2">S.Karthickraja</div>
+                <div *ngSwitchCase="3">M.Kaviyarasan</div>
+                <div *ngSwitchCase="99">Default</div>
+                <div *ngSwitchDefault>Click the Select Option</div>
+                </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,144 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-12 text-left">
+            <select #select (change)="change(select.value)"> 
+                <option>Select</option>
+                <option value="1">Firstpage</option>
+                <option value="2">Secondpage</option>
+                <option value="3">Thirdpage</option>
+                <option value="4">Fourthpage</option>
+            </select>   
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="Blog" *ngIf="page==1">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 text-center bg-dark">
+         <button type="button" data-toggle="collapse" data-target="#map" class="collapsed" aria-expanded="false">Click Here
+          </button>
+          <div id="map" class="collapse" aria-expanded="false">
+                <img src="/assets/google.gif" height="500px" width="100%">
+            </div>            	
+      </div>
+	</div>
+</div>
+<br>
+<div class="container-fluid text-white" *ngIf="page==2">
+	<div class="row">
+		<div class="col-lg-4 col-md-12 col-sm-12">
+			<div class="border">
+				<img src="/assets/blog2.jpg" height="230px" width="100%">
+				<br>
+				<br>
+				<h4 class="ml-5">Transistion In Ux Design</h4>
+				<p class="ml-5">Some example text some example text. John Doe is an architect and engineer</p>
+				<button type="button" class="btn btn-primary mb-5 ml-5">See Profile</button>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-12 col-sm-12">
+			<div class="border">
+				<img src="/assets/blog1.jpg" height="230px" width="100%">
+				<br>
+				<br>
+				<h4 class="ml-5">Transistion In Ux Design</h4>
+				<p class="ml-5">Some example text some example text. John Doe is an architect and engineer</p>
+				<button type="button" class="btn btn-primary mb-5 ml-5">See Profile</button>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-12 col-sm-12">
+			<div class="border">
+				<img src="/assets/blog3.jpg" height="230px" width="100%">
+				<br>
+				<br>
+				<h4 class="ml-5">Transistion In Ux Design</h4>
+				<p class="ml-5">Some example text some example text. John Doe is an architect and engineer</p>
+				<button type="button" class="btn btn-primary mb-5 ml-5">See Profile</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" *ngIf="page==3">
+	<div class="row">
+		<div class="col-lg-6 col-md-12 col-sm-12 text-white">
+			<h4>Say Hello</h4>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+<br>
+<br>
+erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+		</div>
+		<div class="col-lg-6 col-md-12 col-sm-12">
+			<input type="text" name="text" placeholder="Name" id="text1">
+			<input type="text" name="text" placeholder="E-mail" id="text1" class="mt-3">
+			<input type="text" name="text" placeholder="Subject" id="text1" class="mt-3">
+		<div class="mt-3">
+			<input type="text" name="text" placeholder="Message" id="text2">
+		</div>
+	</div>
+	</div>
+</div>
+<div *ngIf="page==4" class="text-primary">
+<div class="text-center mt-5">
+	<h2>Follow our Twitter feed</h2>
+	<p class="mt-5">From a group of academic pioneers in 1901 to the Free Speech Movement in 1964, Bridge University.</p>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+         	<div class="row">
+        		<div class="col-lg-2">
+         			<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div>
+              		
+              		<div class="col-lg-6">
+              			  <div class="zz">
+                  <h5>Mechanical Gear</h5>
+                  <p>@mech gear icons</p>
+
+                            </div>
+                     </div>
+               </div>
+               <div class="col-lg-12 col-md-12 col-sm-12">
+         			<p>A mechanical seal is a device that helps join systems or mechanisms together by preventing ... Stub icon, This article about a mechanical engineering topic is a stub. You can help Wikipedia by expanding it.</p>
+         		</div>
+           </div>                
+           <div class="col-lg-4 col-md-12 col-sm-12">
+              	<div class="row">
+              		<div class="col-lg-2">
+         			<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+                </div> 		
+              		<div class="col-lg-6">
+              			  <div class="zz">
+                  <h5>Mechanical Gear</h5>
+                  <p>@mech gear icons</p>
+                            </div>
+                     </div>
+               </div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+         			<p>A mechanical seal is a device that helps join systems or mechanisms together by preventing ... Stub icon, This article about a mechanical engineering topic is a stub. You can help Wikipedia by expanding it.</p>
+         		</div>
+         </div>
+               <div class="col-lg-4 col-md-12 col-sm-12">
+              	<div class="row">
+              		<div class="col-lg-2">
+         			<i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                    <span class="sr-only">Loading...</span>
+              		</div>
+              		<div class="col-lg-6">
+              			  <div class="zz">
+                  <h5>Mechanical Gear</h5>
+                  <p>@mech gear icons</p>
+                            </div>
+                     </div> 
+               </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 mb-5">
+         			<p>A mechanical seal is a device that helps join systems or mechanisms together by preventing ... Stub icon, This article about a mechanical engineering topic is a stub. You can help Wikipedia by expanding it.</p>
+         		</div>
+             </div>
+         </div>
+     </div>
+     </div>
+
